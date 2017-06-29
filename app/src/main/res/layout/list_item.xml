@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_margin">
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_weight="0.3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"/>
+    <LinearLayout
+        android:id="@+id/item_descriptor_view"
+        android:layout_weight="0.7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/item_name_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/item_text_size"
+            tools:text="Name" />
+        <TextView
+            android:id="@+id/item_qty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_text_size"
+            tools:text="Qty avlbl"
+            />
+        <TextView
+            android:id="@+id/item_supplier_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_text_size"
+            tools:text="Supplier"
+            />
+        <TextView
+            android:id="@+id/item_price_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_text_size"
+            tools:text="Price"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/inventory_sale_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sale_button"
+        android:focusable="false"
+        android:textAllCaps="false" />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">InventoryApp</string>
+    <string name="empty_view_title_text">It seems there are no items in store currently. Why not add some!</string>
+    <string name="edit_inventory_label">Edit Inventory Here</string>
+    <string name="action_insert_dummy_inventory">Insert Dummy Inventory</string>
+    <string name="action_delete_all_inventory">Delete All Inventory</string>
+    <string name="name_label">Item Name (*)</string>
+    <string name="hint_enter_name">Enter Item Name</string>
+    <string name="price_label">Item Price (in $) (*)</string>
+    <string name="hint_enter_price">Enter Price in $</string>
+    <string name="supplier_label">Supplier (*)</string>
+    <string name="hint_enter_supplier">Enter Supplier</string>
+    <string name="inventory_label">Quantity Available (*)</string>
+    <string name="enter_inventory">Add Inventory</string>
+    <string name="image_from_gallery">Select from Gallery</string>
+    <string name="image_from_camera">Pic from Camera</string>
+    <string name="hint_enter_inventory">Add inventory Count here</string>
+    <string name="dollar_currency">$</string>
+    <string name="hint_enter_supplier_email">Enter Supplier\'s email id here</string>
+    <string name="supplier_email_label">Supplier\'s email</string>
+    <string name="supplier_phone_label">Supplier\'s phone</string>
+    <string name="hint_enter_supplier_phone">Enter Supplier\'s Phone</string>
+    <string name="mandatory_label">(*) marked fields are mandatory fields</string>
+    <string name="add_inventory_label">Add Item</string>
+    <string name="update_failed_message">Failed to update Inventory in store</string>
+    <string name="insert_failed_message">Failed to add Inventory to store</string>
+    <string name="insert_passed_message">Inventory item added to the store</string>
+    <string name="update_passed_message">Item updated in inventory list</string>
+    <string name="update_inventory">Update Item</string>
+    <string name="mandatory_fields_empty">Some of the mandatory fields (*) are empty. Please fill in respective values and save form again</string>
+    <string name="inventory_values_invalid_message"><![CDATA[Please use valid values (non negative, >=0) for inventory quantity]]></string>
+    <string name="inventory_price_invalid_message"><![CDATA[Inventory price should be >= 0]]></string>
+    <string name="unsaved_changes_dialog_msg">You have got unsaved changes in edit form. Do you want to discared these?</string>
+    <string name="discard">Discard Changes</string>
+    <string name="keep_editing">Keep Edits</string>
+    <string name="action_delete">Delete Item</string>
+    <string name="delete_dialog_msg">Are you sure you want to delete this item from inventory list?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="editor_delete_item_failed">We are unable to delete the item currently.</string>
+    <string name="editor_delete_item_success">Item was successfully deleted from inventory list</string>
+    <string name="delete_all_dialog_msg">Are you sure you want to clear the inventory list by deleting all items?</string>
+    <string name="editor_delete_all_items_failed">Failed to delete any items from list, probably since the list is empty.</string>
+    <string name="editor_delete_all_items_success">Your inventory list is now cleared, with all items deleted.</string>
+    <string name="sale_button">Sale</string>
+    <string name="modify_button">Modify</string>
+    <string name="inventory_modify_qty_label">Enter the quantity that you want to add or remove (use "-" for removing ) from inventory here?</string>
+    <string name="modify_qty_hint">Enter the change here</string>
+    <string name="order_button">Order via Email</string>
+    <string name="no_email_client">There is no email client installed.</string>
+    <string name="no_supplier_email">Please update supplier email before ordering.</string>
+    <string name="template_subject">Inventory Order</string>
+    <string name="no_inventory_order">It seems total inventory order is 0. We will be unable to send email for this. Please increase the quantity for placing order</string>
+    <string name="send_mail_log">\"Send mail...\"</string>
+    <string name="negative_qty_warning">Inventory being sold is more than that is available. Please check.</string>
+</resources>

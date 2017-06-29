@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin"
+        tools:context=".EditInventoryActivity">
+
+        <LinearLayout
+            android:id="@+id/image_preview_layout_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_preview_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="center" />
+
+            <LinearLayout
+                android:id="@+id/image_layout_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add_gallery_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="32dp"
+                    android:onClick="selectImageFromGallery"
+                    android:text="@string/image_from_gallery"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/add_camera_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:onClick="takePicture"
+                    android:text="@string/image_from_camera"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/name_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_label" />
+
+        <EditText
+            android:id="@+id/item_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_enter_name" />
+
+        <TextView
+            android:id="@+id/price_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_label" />
+
+        <EditText
+            android:id="@+id/item_price_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_enter_price"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/supplier_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/supplier_label" />
+
+        <EditText
+            android:id="@+id/item_supplier_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_enter_supplier" />
+
+        <TextView
+            android:id="@+id/supplier_email_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/supplier_email_label" />
+
+        <EditText
+            android:id="@+id/supplier_email_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_enter_supplier_email" />
+
+        <TextView
+            android:id="@+id/supplier_phone_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/supplier_phone_label" />
+
+        <EditText
+            android:id="@+id/supplier_phone_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_enter_supplier_phone" />
+
+        <TextView
+            android:id="@+id/inventory_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/inventory_label" />
+
+        <EditText
+            android:id="@+id/item_inventory_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_enter_inventory"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:id="@+id/order_layout_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/inventory_sale_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sale_button"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/inventory_modify_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/modify_button"
+                android:textAllCaps="false" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/inventory_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_button"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false" />
+
+
+        <TextView
+            android:id="@+id/mandatory_label_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mandatory_label" />
+
+        <Button
+            android:id="@+id/add_inventory_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_inventory"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>
